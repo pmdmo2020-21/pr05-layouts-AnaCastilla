@@ -2,4 +2,16 @@
 <resources>
     <dimen name="margin">8dp</dimen>
     <dimen name="margin_2x">16dp</dimen>
+    <dimen name="headerHeight">203dp</dimen>
+    <dimen name="margins">12dp</dimen>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="textSize2">16sp</dimen>
+    <dimen name="marginBookmark">120dp</dimen>
+    <dimen name="floatingBtn">15dp</dimen>
+    <dimen name="marginRight">37dp</dimen>
+    <dimen name="marginRight2">32dp</dimen>
+    <dimen name="viewLine">5dp</dimen>
+    <dimen name="textSize3">12dp</dimen>
+    <dimen name="littleMargin">8dp</dimen>
+    <dimen name="widthBtns">190dp</dimen>
 </resources>

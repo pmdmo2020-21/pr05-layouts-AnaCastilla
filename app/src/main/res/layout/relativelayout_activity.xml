@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@id/imgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerHeight"
+        android:src="@drawable/header" />
+
+    <TextView
+        android:id="@id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTitle"
+        android:layout_below="@id/imgHeader"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginLeft="@dimen/margins"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bookmark"
+        android:layout_below="@id/imgHeader"
+        android:layout_toEndOf="@id/lblTitle"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginLeft="@dimen/marginBookmark"/>
+
+    <TextView
+        android:id="@id/lblSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTitle"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginTop="@dimen/littleMargin"
+        android:textSize="@dimen/textSize3"
+        android:text="@string/txtSubTitle"/>
+
+    <Button
+        android:id="@id/btnRent"
+        android:layout_width="@dimen/widthBtns"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblSubtitle"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginTop="7dp"
+        android:layout_weight="1"
+        android:text="@string/txtRent" />
+
+    <Button
+        android:id="@id/btnBuy"
+        android:layout_width="@dimen/widthBtns"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblSubtitle"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginRight="@dimen/margins"
+        android:layout_toRightOf="@id/btnRent"
+        android:layout_weight="1"
+        android:text="@string/txtBuy" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_divider"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginRight="@dimen/floatingBtn"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/floatingBtn"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginRight="@dimen/floatingBtn"
+        android:layout_weight="1"
+        android:src="@drawable/ic_family"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/floatingBtn"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginRight="@dimen/floatingBtn"
+        android:layout_weight="1"
+        android:src="@drawable/tomato"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/floatingBtn"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginRight="@dimen/margins"
+        android:layout_weight="1"
+        android:src="@drawable/ic_similar"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@id/lblEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginRight="@dimen/floatingBtn"
+        android:text="@string/txtEdit"/>
+
+    <TextView
+        android:id="@id/lblFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/floatingBtn"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="@dimen/margins"
+        android:text="@string/txtFamily"/>
+
+    <TextView
+        android:id="@id/lblTomato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/floatingBtn"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginRight="@dimen/floatingBtn"
+        android:text="@string/txtTomato"/>
+
+    <TextView
+        android:id="@id/lblSimilar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginRight2"
+        android:layout_marginTop="@dimen/margins"
+        android:text="@string/txtSimilar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_divider"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginRight="@dimen/margins"
+        android:layout_marginBottom="@dimen/viewLine"/>
+
+    <TextView
+        android:id="@id/lblDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtDescription"
+        android:layout_margin="@dimen/margins"
+        android:textSize="@dimen/textSize2"/>
+
+</RelativeLayout>

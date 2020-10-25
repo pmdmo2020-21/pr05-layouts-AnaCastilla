@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Layouts</string>
+    <string name="txtTitle">Beauty and the Beast</string>
+    <string name="txtSubTitle">March 2017 PG 129 minutes</string>
+    <string name="txtRent">RENT FOR 9,99€</string>
+    <string name="txtBuy">BUY FOR 29,99€</string>
+    <string name="txtEdit">242 ratings</string>
+    <string name="txtFamily">Family</string>
+    <string name="txtTomato">71%</string>
+    <string name="txtSimilar">Similar</string>
+    <string name="txtDescription">The story characters you know and and love come to spectacular life in the live-action adaptation of Disney\'s animated classic Beauty and the Beast.</string>
 </resources>

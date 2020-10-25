@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imgHeader" type="id" />
+    <item name="lblTitle" type="id" />
+    <item name="lblSubtitle" type="id" />
+    <item name="llTitleBookmark" type="id" />
+    <item name="llButtons" type="id" />
+    <item name="btnRent" type="id" />
+    <item name="btnBuy" type="id" />
+    <item name="llFloatingBtn" type="id" />
+    <item name="llFloatingTxt" type="id" />
+    <item name="lblEdit" type="id" />
+    <item name="lblFamily" type="id" />
+    <item name="lblTomato" type="id" />
+    <item name="lblSimilar" type="id" />
+    <item name="lblDescription" type="id" />
+</resources>
