@@ -38,74 +38,83 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/lblTitle"
         android:layout_marginLeft="@dimen/margins"
-        android:layout_marginTop="@dimen/littleMargin"
+        android:layout_marginTop="@dimen/margin"
         android:textSize="@dimen/textSize3"
         android:text="@string/txtSubTitle"/>
 
     <Button
         android:id="@id/btnRent"
-        android:layout_width="@dimen/widthBtns"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lblSubtitle"
+        android:layout_alignStart="@id/lblSubtitle"
         android:layout_marginLeft="@dimen/margins"
-        android:layout_marginTop="7dp"
-        android:layout_weight="1"
+        android:layout_marginTop="@dimen/margin"
         android:text="@string/txtRent" />
 
     <Button
         android:id="@id/btnBuy"
-        android:layout_width="@dimen/widthBtns"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lblSubtitle"
-        android:layout_marginTop="6dp"
         android:layout_marginLeft="@dimen/margins"
+        android:layout_marginTop="@dimen/margin"
         android:layout_marginRight="@dimen/margins"
-        android:layout_toRightOf="@id/btnRent"
-        android:layout_weight="1"
+        android:layout_toEndOf="@+id/btnRent"
         android:text="@string/txtBuy" />
 
     <View
+        android:id="@id/viewTop"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/gray_divider"/>
+        android:layout_below="@id/btnBuy"
+        android:background="@color/gray_divider"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginRight="@dimen/margins"
+        android:layout_marginBottom="@dimen/viewLine"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="0dp"
+        android:id="@id/floatingEdit"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margins"
+        android:layout_below="@id/viewTop"
+        android:layout_alignLeft="@id/btnRent"
         android:layout_marginTop="@dimen/margins"
-        android:layout_marginRight="@dimen/floatingBtn"
-        android:layout_weight="1"
         android:src="@drawable/ic_baseline_edit_24"
         app:tint="@color/white" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="0dp"
+        android:id="@id/floatingFamily"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/viewTop"
+        android:layout_alignRight="@id/btnRent"
         android:layout_marginLeft="@dimen/floatingBtn"
-        android:layout_marginTop="@dimen/margins"
         android:layout_marginRight="@dimen/floatingBtn"
-        android:layout_weight="1"
+        android:layout_marginTop="@dimen/margins"
         android:src="@drawable/ic_family"
         app:tint="@color/white" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="0dp"
+        android:id="@id/floatingTomato"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/floatingBtn"
+        android:layout_below="@id/viewTop"
+        android:layout_alignLeft="@id/btnBuy"
+        android:layout_marginLeft="@dimen/margins"
         android:layout_marginTop="@dimen/margins"
-        android:layout_marginRight="@dimen/floatingBtn"
-        android:layout_weight="1"
         android:src="@drawable/tomato"
         app:tint="@color/white" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="0dp"
+        android:id="@id/floatingSimilar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/floatingBtn"
+        android:layout_below="@id/viewTop"
+        android:layout_alignRight="@id/btnBuy"
         android:layout_marginTop="@dimen/margins"
-        android:layout_marginRight="@dimen/margins"
-        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/floatingBtn"
         android:src="@drawable/ic_similar"
         app:tint="@color/white" />
 
@@ -113,40 +122,51 @@
         android:id="@id/lblEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margins"
+        android:layout_below="@id/floatingEdit"
+        android:layout_alignLeft="@id/floatingEdit"
+        android:layout_alignRight="@id/floatingEdit"
         android:layout_marginTop="@dimen/margins"
-        android:layout_marginRight="@dimen/floatingBtn"
+        android:layout_marginLeft="@dimen/margins"
         android:text="@string/txtEdit"/>
 
     <TextView
         android:id="@id/lblFamily"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/floatingBtn"
-        android:layout_marginRight="@dimen/marginRight"
+        android:layout_below="@id/floatingFamily"
+        android:layout_alignLeft="@id/floatingFamily"
+        android:layout_alignRight="@id/floatingFamily"
         android:layout_marginTop="@dimen/margins"
+        android:layout_marginLeft="@dimen/margin"
         android:text="@string/txtFamily"/>
 
     <TextView
         android:id="@id/lblTomato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/floatingBtn"
+        android:layout_below="@id/floatingTomato"
+        android:layout_alignLeft="@id/floatingTomato"
+        android:layout_alignRight="@id/floatingTomato"
         android:layout_marginTop="@dimen/margins"
-        android:layout_marginRight="@dimen/floatingBtn"
+        android:layout_marginLeft="@dimen/margin_2x"
         android:text="@string/txtTomato"/>
 
     <TextView
         android:id="@id/lblSimilar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/marginRight2"
+        android:layout_below="@id/floatingSimilar"
+        android:layout_alignLeft="@id/floatingSimilar"
+        android:layout_alignRight="@id/floatingSimilar"
         android:layout_marginTop="@dimen/margins"
+        android:layout_marginLeft="@dimen/margin"
         android:text="@string/txtSimilar"/>
 
     <View
+        android:id="@id/viewBottom"
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_below="@id/lblEdit"
         android:background="@color/gray_divider"
         android:layout_marginTop="@dimen/margins"
         android:layout_marginLeft="@dimen/margins"
@@ -155,6 +175,7 @@
 
     <TextView
         android:id="@id/lblDescription"
+        android:layout_below="@id/viewBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txtDescription"

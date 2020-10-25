@@ -12,6 +12,4 @@
     <dimen name="marginRight2">32dp</dimen>
     <dimen name="viewLine">5dp</dimen>
     <dimen name="textSize3">12dp</dimen>
-    <dimen name="littleMargin">8dp</dimen>
-    <dimen name="widthBtns">190dp</dimen>
 </resources>

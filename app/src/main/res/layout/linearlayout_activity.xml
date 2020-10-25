@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margins"
-        android:layout_marginTop="@dimen/littleMargin"
+        android:layout_marginTop="@dimen/margin"
         android:textSize="@dimen/textSize3"
         android:text="@string/txtSubTitle"/>
 
@@ -78,6 +78,7 @@
     </LinearLayout>
 
     <View
+        android:id="@id/viewTop"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/gray_divider"
@@ -182,6 +183,7 @@
     </LinearLayout>
 
     <View
+        android:id="@id/viewBottom"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/gray_divider"

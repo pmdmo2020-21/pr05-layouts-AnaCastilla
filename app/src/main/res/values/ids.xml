@@ -14,4 +14,10 @@
     <item name="lblTomato" type="id" />
     <item name="lblSimilar" type="id" />
     <item name="lblDescription" type="id" />
+    <item name="viewTop" type="id" />
+    <item name="viewBottom" type="id" />
+    <item name="floatingEdit" type="id" />
+    <item name="floatingFamily" type="id" />
+    <item name="floatingTomato" type="id" />
+    <item name="floatingSimilar" type="id" />
 </resources>
