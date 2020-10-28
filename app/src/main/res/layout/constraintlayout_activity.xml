@@ -1,9 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    
+    <ImageView
+        android:id="@id/imgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headerHeight"
+        android:adjustViewBounds="true"
+        android:src="@drawable/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTitle"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginStart="@dimen/margins"
+        android:layout_marginBottom="@dimen/margin"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgHeader"/>
+
+    <ImageView
+        android:id="@id/imgBookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginRight="@dimen/margins"
+        android:src="@drawable/ic_bookmark"
+        android:layout_marginLeft="@dimen/marginBookmark"
+        app:layout_constraintStart_toEndOf="@+id/lblTitle"
+        app:layout_constraintTop_toBottomOf="@+id/imgHeader" />
+
+    <TextView
+        android:id="@id/lblSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginTop="@dimen/margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblTitle"
+        android:textSize="@dimen/textSize3"
+        android:text="@string/txtSubTitle"/>
+
+    <Button
+        android:id="@id/btnRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtRent"
+        android:layout_marginTop="@dimen/margins"
+        app:layout_constraintEnd_toStartOf="@id/btnBuy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSubtitle" />
+
+    <Button
+        android:id="@id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtBuy"
+        android:layout_marginTop="@dimen/margins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnRent"
+        app:layout_constraintTop_toBottomOf="@id/lblSubtitle" />
+
+    <View
+        android:id="@id/viewTop"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_divider"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginRight="@dimen/margins"
+        android:layout_marginBottom="@dimen/viewLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@id/floatingEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margins"
+        app:layout_constraintEnd_toStartOf="@id/floatingFamily"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewTop"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@id/floatingFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/floatingBtn"
+        android:layout_marginTop="@dimen/margins"
+        android:src="@drawable/ic_family"
+        app:layout_constraintEnd_toStartOf="@id/floatingTomato"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewTop"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@id/floatingTomato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margins"
+        android:src="@drawable/tomato"
+        app:layout_constraintEnd_toStartOf="@id/floatingSimilar"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewTop"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@id/floatingSimilar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_similar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewTop"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@id/lblEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/floatingEdit"
+        app:layout_constraintStart_toStartOf="@id/floatingEdit"
+        app:layout_constraintTop_toBottomOf="@id/floatingEdit"
+        android:layout_marginTop="@dimen/margins"
+        android:textAlignment="center"
+        android:text="@string/txtEdit"/>
+
+    <TextView
+        android:id="@id/lblFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margins"
+        android:text="@string/txtFamily"
+        app:layout_constraintEnd_toEndOf="@id/floatingFamily"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/floatingFamily"
+        app:layout_constraintTop_toBottomOf="@id/floatingFamily" />
+
+    <TextView
+        android:id="@id/lblTomato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_2x"
+        android:layout_marginTop="@dimen/margins"
+        android:text="@string/txtTomato"
+        app:layout_constraintEnd_toEndOf="@id/floatingTomato"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/floatingTomato"
+        app:layout_constraintTop_toBottomOf="@id/floatingTomato" />
+
+    <TextView
+        android:id="@id/lblSimilar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margins"
+        android:text="@string/txtSimilar"
+        app:layout_constraintEnd_toEndOf="@id/floatingSimilar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/floatingSimilar"
+        app:layout_constraintTop_toBottomOf="@id/floatingSimilar" />
+
+    <View
+        android:id="@id/viewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_divider"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginRight="@dimen/margins"
+        android:layout_marginBottom="@dimen/viewLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEdit"/>
+
+    <TextView
+        android:id="@id/lblDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewBottom"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginRight="@dimen/margins"
+        android:text="@string/txtDescription"
+        android:textSize="@dimen/textSize2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

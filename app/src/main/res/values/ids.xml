@@ -20,4 +20,5 @@
     <item name="floatingFamily" type="id" />
     <item name="floatingTomato" type="id" />
     <item name="floatingSimilar" type="id" />
+    <item name="imgBookmark" type="id" />
 </resources>

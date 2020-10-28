@@ -98,7 +98,7 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@id/floatingTomato"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/viewTop"
         android:layout_alignLeft="@id/btnBuy"
@@ -109,7 +109,7 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@id/floatingSimilar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/viewTop"
         android:layout_alignRight="@id/btnBuy"
@@ -126,7 +126,7 @@
         android:layout_alignLeft="@id/floatingEdit"
         android:layout_alignRight="@id/floatingEdit"
         android:layout_marginTop="@dimen/margins"
-        android:layout_marginLeft="@dimen/margins"
+        android:textAlignment="center"
         android:text="@string/txtEdit"/>
 
     <TextView
